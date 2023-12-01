@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Busqueda } from "./components/busqueda";
 import { PostGrid } from "./components/PostGrid";
 import { CreatePost } from "./components/CreatePost";
+import { DatailsPost } from "./Pages/DatailsPost";
 
 export const BlogApp = () => {
     const [busqueda, setBusqueda] = useState("");
@@ -13,15 +14,12 @@ export const BlogApp = () => {
         <>
             {/* Titulo */}
             <h1 className="titulo">BlogerTI</h1>
-
             {/* Barra d busqueda */}
             <Busqueda onNewBusqueda={ (value) => onAddBusqueda(value) }/>
             {/* Barra de creacion de post */}
             <CreatePost />
             {/* Listado de post */}
             <PostGrid busqueda={busqueda}/>
-                
-   
         </>
     );
 }
