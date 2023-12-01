@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { postPosts } from "../helpers/postPost";
 
 export const CreatePost = () => {
     const [titulo, setTitulo] = useState('');
@@ -8,7 +9,7 @@ export const CreatePost = () => {
     const onSubmit = (event)=>{
         console.log('Crear Post');
         const post = {titulo, autor, contenido};
-        console.log(post)
+        postPosts(post);
     }
 
 
