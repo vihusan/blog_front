@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('./assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('./assets/fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+  
+body {
+    margin: 8px 150px;
+    padding: 60px;
+}
+
+input {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 32, 158);
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px;
+    width: 72%;
+    margin-bottom: 50px;
+}
+
+select {
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 32, 158);
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px;
+    width: 20%;
+    margin-bottom: 20px;
+    height: 50px;
+    -webkit-appearance: none; /* Para Safari/Chrome */
+      -moz-appearance: none; /* Para Firefox */
+      appearance: none;
+      background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z" /></svg>'); /* Cambia la URL a la imagen de tu flecha personalizada */
+      background-repeat: no-repeat;
+      background-position: right 10px top 50%; /* Agrega margen a la derecha */
+}
+h1 {
+    font-size: 2rem;
+    font-family: 'MontserratBold';
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'MontserratBold';
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 1rem;
+    font-family: 'MontserratBold';
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.cardContainer{
+    width: 30%;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+    margin: 20px 10px 20px 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+}
+
+.header-card{
+    height: 60px;
+    background-color: rgb(208, 109, 78);
+    padding: 20px 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.header-card h2, p {
+    margin: 0;
+}
+
+.header-card h2{
+    font-family: 'MontserratBold';
+    font-size: 30px;
+    color: white;
+}
+.header-card p{
+    font-family: 'MontserratLight';
+    font-size: 15px; 
+    color: white
+}
+
+.infoContainer {
+    height: 70px;
+    padding: 20px 15px;
+}
+
+.infoContainer p {
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(55, 50, 50)
+}
+
+.footer-card{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(255, 200, 127);
+}
+
+.footer-card p{
+    font-family: 'MontserratLight';
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.busquedaContainer{
+    display: flex;
+}
+
+.createContainer{
+    display: flex;
+}
+.createButton{
+    font-family: 'MontserratBold';
+    font-size: 15px;
+    background-color: rgb(208, 109, 78);
+    color: white;
+    border: 1px solid rgb(55, 50, 50);
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.tituloInput{
+    width: 15%;
+    margin-right: 5px;
+}
+
+.autorInput{
+    width: 10%;
+    margin-right: 5px;
+
+}
+
+.contenidoInput{
+    width: 40%;
+    margin-right: 5px;
+}
