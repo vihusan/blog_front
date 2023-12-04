@@ -127,7 +127,7 @@ h5 {
 
 .footer-card{
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
     align-items: center;
     height: 40px;
     background-color: rgb(255, 200, 127);
@@ -137,6 +137,15 @@ h5 {
     font-family: 'MontserratLight';
     font-size: 12px;
     margin-right: 20px;
+    justify-content: space-around;
+}
+
+.link-vermas{
+    text-decoration: none;
+    font-family: 'MontserratLight';
+    font-size: 15px;
+    margin-right: 20px;
+    justify-content: space-around;
 }
 
 .busquedaContainer{
@@ -171,4 +180,35 @@ h5 {
 .contenidoInput{
     width: 40%;
     margin-right: 5px;
+}
+
+
+.detailsContainer {
+    border-radius: 20px;
+    padding: 30px 60px;
+    background: rgb(196,0,0);
+    background: linear-gradient(73deg, rgba(196,0,0,1) 1%, rgba(223,0,202,1) 47%, rgba(255,74,0,1) 100%);
+}
+.tituloDetail {
+    color: white
+}
+
+.autorDetail {
+    font-family: 'MontserratLight';
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.contenidoDetail {
+    font-family: 'MontserratBold';
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.fechaDetail {
+    text-align: right;
+    color: white;
+    font-family: 'MontserratLight'; 
 }

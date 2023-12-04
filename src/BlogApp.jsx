@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Busqueda } from "./components/busqueda";
+import { Busqueda } from "./components/Busqueda";
 import { PostGrid } from "./components/PostGrid";
 import { CreatePost } from "./components/CreatePost";
-import { DatailsPost } from "./Pages/DatailsPost";
 
-export const BlogApp = () => {
+
+export const BlogApp = ()  => {
     const [busqueda, setBusqueda] = useState("");
     const onAddBusqueda = (newBusqueda) => {
         setBusqueda(newBusqueda)

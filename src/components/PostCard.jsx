@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const PostCard = ({value:post}) => {
   const fecha = new Date(post.createdAt);
   const dia = fecha.getDay();
@@ -15,6 +17,7 @@ export const PostCard = ({value:post}) => {
             <p>{post.contenido}</p>
         </div>
         <div className="footer-card">
+            <Link className="link-vermas" to={`/detalles/${post.id}`}> Ver más </Link>
             <p>{ creacionDate }</p>
         </div>
     </div>
