@@ -22,18 +22,18 @@ export const Busqueda = ({onNewBusqueda}) => {
     }
 
     return (
-        <div>
-            <h5>Busqueda</h5>
-            <form className='busquedaContainer' onSubmit={ onSubmit }>
-                <select value={opcionSeleccionada} onChange={handleSelectChange}>
+        <div className="container_busqueda">
+            <h3>Busqueda</h3>
+            <form className="form_busqueda" onSubmit={ onSubmit }>
+                <select className="select_busqueda" value={opcionSeleccionada} onChange={handleSelectChange}>
                     <option value="titulo">Titulo</option>
                     <option value="contenido">Contenido</option>
                     <option value="autor">Autor</option>
                 </select>
                 
-                <input 
+                <input className="input_busqueda"
                     type="text"
-                    placeholder="Buscar Post"
+                    placeholder="Buscar en BloggerTI"
                     onChange={ onInputChange }
                 />
             </form>

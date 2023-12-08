@@ -3,6 +3,7 @@ import { blogApi } from "../api/blogApi";
 
 export const postEntrada = async (post)=>{
     const {data} = await blogApi.post('/posts', post);
+    return data;
 }
 
 export const getEntradas = async () => {

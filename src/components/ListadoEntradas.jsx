@@ -1,29 +1,30 @@
 
 import { useEffect, useState } from "react";
-import { PostCard } from "./postCard";
-import { getEntradas, getEntradasATC} from "../helpers/serviceBlog";
 
-export const PostGrid = ({busqueda}) => {
+import { getEntradas, getEntradasATC} from "../helpers/serviceBlog";
+import { TarjetaEntrada } from "./TarjetaEntrada";
+
+export const ListadoEntradas = ({busqueda}) => {
     const [arrayEntradas, setArrayEntradas] = useState([]);
 
     useEffect(()=>{
         if(busqueda && busqueda.cb !== '') {
             getEntradasATC(busqueda).then( (data) => {
-                setArrayEntradas(data);
+                setArrayEntradas(data.reverse());
             });
         }else{
             getEntradas().then( (data) => {
-                setArrayEntradas(data);
+                setArrayEntradas(data.reverse());
             });
         }
     }, [busqueda]);
 
 
     return (
-        <div className="card-grid">
+        <div className="container_listado">
             { 
                 arrayEntradas.map( (post) => (
-                    <PostCard key={post.id} value= {post} />  
+                    <TarjetaEntrada key={post.id} value= {post} />  
                 ))
             }
         </div>
